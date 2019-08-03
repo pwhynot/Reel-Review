@@ -42,11 +42,11 @@ import {
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  User Profile
+                  User
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Dashboard
+                    My Account
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
