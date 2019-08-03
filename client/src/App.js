@@ -5,7 +5,9 @@ import Jumbotron from "./components/layouts/jumbotron/index";
 import Footer from "./components/layouts/footer/index";
 import Container from "./components/layouts/container/index";
 
+
 import "./App.css";
+
 
  class App extends Component {
   render() {
@@ -15,7 +17,7 @@ import "./App.css";
       <div>
         <Navbar />
         <Jumbotron />
-        
+       
       </div>
       </Router>
       <Container />

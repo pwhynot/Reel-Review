@@ -35,10 +35,10 @@ import {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">Submit a Review</NavLink>
+                <NavLink href="/review">Submit a Review</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="">Movie Trivia</NavLink>
+                <NavLink href="/weeklyTrivia">Movie Trivia</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
