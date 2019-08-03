@@ -8,7 +8,7 @@ import Container from '@material-ui/core/Container';
     <React.Fragment>
       <CssBaseline />
       <Container fixed>
-      News and Online Poll will go here
+      
         <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
         
       </Container>
