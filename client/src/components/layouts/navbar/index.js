@@ -30,7 +30,7 @@ import "./style.css";
   render() {
     return (
       <div>
-        <Navbar color="dark" light expand="md">
+        <Navbar color="light" light expand="md">
           <NavbarBrand href="/">Reel Review</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

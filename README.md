@@ -23,10 +23,7 @@ Two new libraries: Material-UI, Reactstrap
 -Login Page
 -Unique dashboard page for each user
 -Review and Ratings submission page for users
--Message board for users to communicate with each other
 -Weekly trivia game and online polls
--API to send verification email to users once they sign up
--Reviews and ratings of current movies/television shows(not user submitted)
 -Daily/Weekly posting of latest film/tv news and content
 
 ## Stretch Goals:
