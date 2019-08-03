@@ -49,6 +49,13 @@ import {
                     Dashboard
                   </DropdownItem>
                   <DropdownItem divider />
+                  <DropdownItem>
+                    Login
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem>
+                    Logout
+                  </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import Navbar from "./components/layouts/navbar/index";
 import Jumbotron from "./components/layouts/jumbotron/index";
 import Footer from "./components/layouts/footer/index";
+import Container from "./components/layouts/container/index";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ import "./App.css";
         
       </div>
       </Router>
+      <Container />
       <Footer /> 
       </div>
     )
