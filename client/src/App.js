@@ -14,9 +14,10 @@ import "./App.css";
       <div>
         <Navbar />
         <Jumbotron />
-        <Footer />
+        
       </div>
-      </Router>  
+      </Router>
+      <Footer /> 
       </div>
     )
   }
