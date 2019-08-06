@@ -7,7 +7,7 @@ import Home from "./components/pages/Home";
 import userSignUp from "./components/pages/userSignUp";
 import "./App.css";
 import submitReiew from './components/submitReview';
-import weeklyTrivia from './components/pages/weeklyTrivia';
+import weeklyTrivia from './components/pages/Trivia/weeklyTrivia';
 import dashboard from './components/pages/dashboard';
 import userReviews from "./components/pages/userReviews";
 
