@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 import Navbar from "./components/layouts/navbar/index";
 import Jumbotron from "./components/layouts/jumbotron/index";
 import Footer from "./components/layouts/footer/index";
-
+import Home from "./components/pages/Home";
 //import review from "./components/pages/review";
 
 
@@ -21,6 +21,7 @@ import dashboard from './components/pages/dashboard';
         <div className="App">
           <Navbar />
           <Jumbotron />
+          <Route exact path="/" component={Home}></Route>
           <Route exact path="/review" component={submitReiew}></Route>
           <Route exact path="/weeklyTrivia" component={weeklyTrivia}></Route>
           <Route exact path="/dashboard" component={dashboard}></Route>
