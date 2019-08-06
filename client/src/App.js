@@ -9,6 +9,7 @@ import "./App.css";
 import submitReiew from './components/submitReview';
 import weeklyTrivia from './components/pages/weeklyTrivia';
 import dashboard from './components/pages/dashboard';
+import userReviews from "./components/pages/userReviews";
 
 
  class App extends Component {
@@ -20,6 +21,7 @@ import dashboard from './components/pages/dashboard';
           <Jumbotron />
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/review" component={submitReiew}></Route>
+          <Route exact path="/userReviews" component={userReviews}></Route>
           <Route exact path="/weeklyTrivia" component={weeklyTrivia}></Route>
           <Route exact path="/dashboard" component={dashboard}></Route>
           <Route exact path="/userSignUp" component={userSignUp}></Route>

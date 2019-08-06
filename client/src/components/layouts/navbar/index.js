@@ -39,6 +39,9 @@ import "./style.css";
                 <NavLink href="/review">Submit a Review</NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href="/userReviews">View All Reivews</NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="/weeklyTrivia">Movie Trivia</NavLink>
               </NavItem>
               <NavItem>
