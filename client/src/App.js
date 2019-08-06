@@ -10,6 +10,8 @@ import Footer from "./components/layouts/footer/index";
 
 import "./App.css";
 import submitReiew from './components/submitReview';
+import weeklyTrivia from './components/pages/weeklyTrivia';
+import dashboard from './components/pages/dashboard';
 
 
  class App extends Component {
@@ -20,6 +22,8 @@ import submitReiew from './components/submitReview';
           <Navbar />
           <Jumbotron />
           <Route exact path="/review" component={submitReiew}></Route>
+          <Route exact path="/weeklyTrivia" component={weeklyTrivia}></Route>
+          <Route exact path="/dashboard" component={dashboard}></Route>
           <Footer />
         </div>
       </Router>

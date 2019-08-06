@@ -46,8 +46,8 @@ import "./style.css";
                   User
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
-                    My Account
+                  <DropdownItem href="/dashboard">
+                     My Account
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
