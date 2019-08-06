@@ -11,7 +11,7 @@ const jumbotron = (props) => {
           <h1 className="display-3">Reel Review</h1>
           <p className="lead">Sign up to be a user and write your own review for any film or television show.</p>
           <p className="lead">
-          <Button color="primary">Click Here to Sign up</Button>
+          
         </p>
         </Container>
       </Jumbotron>

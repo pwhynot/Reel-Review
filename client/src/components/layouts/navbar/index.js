@@ -41,6 +41,9 @@ import "./style.css";
               <NavItem>
                 <NavLink href="/weeklyTrivia">Movie Trivia</NavLink>
               </NavItem>
+              <NavItem>
+                <NavLink href="/userSignUp">Create Account</NavLink>
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   User
