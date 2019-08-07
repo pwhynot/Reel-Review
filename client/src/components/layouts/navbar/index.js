@@ -12,6 +12,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import "./style.css";
+import { Link } from "react-router-dom";
 
  class navbar extends React.Component {
   constructor(props) {
@@ -31,29 +32,28 @@ import "./style.css";
     return (
       <div>
         <Navbar color="light" light expand="md">
-          <NavbarBrand href="/">Reel Review</NavbarBrand>
+          <NavbarBrand> <Link to="/" style={{ textDecoration: 'none' }}>REEL REVIEW</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/review">Submit a Review</NavLink>
+                <NavLink><Link  to="/review" style={{ textDecoration: 'none'}}>Submit a Review</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/userReviews">View All Reivews</NavLink>
+                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none'}}>View All Reivews</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/weeklyTrivia">Movie Trivia</NavLink>
+                <NavLink><Link  to="/weeklyTrivia" style={{ textDecoration: 'none'}}>Movie Trivia</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/userSignUp">Create Account</NavLink>
+                <NavLink><Link  to="/userSignUp" style={{ textDecoration: 'none'}}>Create Account</Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   User
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem href="/dashboard">
-                     My Account
+                  <DropdownItem href="/dashboard"><Link  to="/dashboard" style={{ textDecoration: 'none'}}>My Account</Link>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
