@@ -9,7 +9,7 @@ const jumbotron = (props) => {
       <Jumbotron fluid>
         <Container fluid>
           <h1 className="display-3">Reel Review</h1>
-          <p className="lead">Sign up to be a user and write your own review for any film or television show.</p>
+          <p className="lead">Film and Television reviews and ratings from everyday people, not overpaid movie critics!</p>
           <p className="lead">
           
         </p>

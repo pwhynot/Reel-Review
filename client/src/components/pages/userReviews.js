@@ -4,7 +4,7 @@ import React, { Component } from 'react'
     render() {
         return (
             <div>
-                <h1>Check out the Latest Reviews submitted by Users!</h1>
+                <h2>Check out the Latest Reviews submitted by Users!</h2>
             </div>
         )
     }

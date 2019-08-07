@@ -12,7 +12,6 @@ class weeklyTrivia extends React.Component {
   };
 
   loadtriviaData = () => {
-    
     this.setState(() => {
       return {
         questions: triviaData[this.state.currentQuestion].question,
@@ -70,9 +69,9 @@ class weeklyTrivia extends React.Component {
     if (isEnd) {
       return (
         <div className="result">
-          <h3>Game Over your Final score is {this.state.score} points </h3>
+          <h3>Game Over your Final score is {this.state.score} points, check back next week for a new set of questions. </h3>
           <p>
-            The correct answer's for the questions was
+            The correct answer's for the questions are 
             <ul>
               {triviaData.map((item, index) => (
                 <li className="ui floating message options" key={index}>
@@ -86,9 +85,8 @@ class weeklyTrivia extends React.Component {
     } else {
       return (
         <div className="App">
-          <h1>{this.state.questions} </h1>
-          <span>{`Questions ${currentQuestion}  out of ${triviaData.length -
-            1} remaining `}</span>
+          <h3>{this.state.questions} </h3>
+          <span>{`Questions ${currentQuestion} out of ${triviaData.length} remaining `}</span>
           {options.map(option => (
             <p
               key={option.id}
@@ -109,7 +107,6 @@ class weeklyTrivia extends React.Component {
               Next
             </button>
           )}
-          {/* //adding a finish button */}
           {currentQuestion === triviaData.length - 1 && (
             <button className="ui inverted button" onClick={this.finishHandler}>
               Finish
