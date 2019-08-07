@@ -4,7 +4,7 @@ import React, { Component } from 'react'
     render() {
         return (
             <div>
-                <h1>Welcome to your User Account!</h1>
+                <h2>Welcome to your User Profile!</h2>
             </div>
         )
     }

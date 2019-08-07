@@ -14,7 +14,7 @@ import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
         <FormGroup row>
           <Label for="reviewTitle" sm={2}>Title</Label>
           <Col sm={6}>
-            <Input type="title" name="title" id="reviewTitle" placeholder="password placeholder" />
+            <Input type="title" name="title" id="reviewTitle" placeholder="title placeholder" />
           </Col>
         </FormGroup>
         <FormGroup row>

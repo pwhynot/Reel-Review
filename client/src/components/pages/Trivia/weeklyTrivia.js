@@ -86,7 +86,7 @@ class weeklyTrivia extends React.Component {
       return (
         <div className="App">
           <h3>{this.state.questions} </h3>
-          <span>{`Questions ${currentQuestion} out of ${triviaData.length} remaining `}</span>
+          <span>{`Questions ${triviaData.length - 1} out of ${triviaData.length} remaining `}</span>
           {options.map(option => (
             <p
               key={option.id}
