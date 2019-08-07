@@ -6,10 +6,10 @@ import Footer from "./components/layouts/footer/index";
 import Home from "./components/pages/Home/Home";
 import userSignUp from "./components/pages/userSignUp";
 import "./App.css";
-import submitReiew from './components/submitReview';
+import submitReiew from './components/pages/ReviewSubmit/submitReview';
 import weeklyTrivia from './components/pages/Trivia/weeklyTrivia';
 import dashboard from './components/pages/Users/Profile/dashboard';
-import userReviews from "./components/pages/userReviews";
+import userReviews from "./components/pages/Reviews/userReviews";
 
 
  class App extends Component {

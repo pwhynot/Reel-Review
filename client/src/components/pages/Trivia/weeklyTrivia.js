@@ -84,8 +84,8 @@ class weeklyTrivia extends React.Component {
       );
     } else {
       return (
-        <div className="App">
-          <h3>{this.state.questions} </h3>
+        <div className="weeklyTrivia">
+          <h4>{this.state.questions} </h4>
           <span>{`Questions ${triviaData.length - 1} out of ${triviaData.length} remaining `}</span>
           {options.map(option => (
             <p
