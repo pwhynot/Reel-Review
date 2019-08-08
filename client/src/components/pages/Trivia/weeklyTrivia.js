@@ -1,5 +1,6 @@
 import React from "react";
 import { triviaData } from "./triviaData";
+import './style.css';
 
 class weeklyTrivia extends React.Component {
   state = {
@@ -25,7 +26,6 @@ class weeklyTrivia extends React.Component {
     this.loadtriviaData();
   }
   nextQuestionHandler = () => {
-    
     const { myAnswer, answer, score } = this.state;
 
     if (myAnswer === answer) {
@@ -52,7 +52,6 @@ class weeklyTrivia extends React.Component {
       });
     }
   }
-  
   checkAnswer = answer => {
     this.setState({ myAnswer: answer, disabled: false });
   };
@@ -69,9 +68,9 @@ class weeklyTrivia extends React.Component {
     if (isEnd) {
       return (
         <div className="result">
-          <h3>Game Over your Final score is {this.state.score} points, check back next week for a new set of questions. </h3>
+          <h3>Game Over your Final score is {this.state.score} points </h3>
           <p>
-            The correct answer's for the questions are 
+            The correct answer's for the questions was
             <ul>
               {triviaData.map((item, index) => (
                 <li className="ui floating message options" key={index}>
@@ -85,8 +84,8 @@ class weeklyTrivia extends React.Component {
     } else {
       return (
         <div className="weeklyTrivia">
-          <h4>{this.state.questions} </h4>
-          <span>{`Questions ${triviaData.length - 1} out of ${triviaData.length} remaining `}</span>
+          <h1>{this.state.questions} </h1>
+         
           {options.map(option => (
             <p
               key={option.id}
@@ -107,6 +106,7 @@ class weeklyTrivia extends React.Component {
               Next
             </button>
           )}
+          
           {currentQuestion === triviaData.length - 1 && (
             <button className="ui inverted button" onClick={this.finishHandler}>
               Finish
