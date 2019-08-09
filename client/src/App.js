@@ -10,6 +10,7 @@ import submitReiew from './components/pages/ReviewSubmit/submitReview';
 import weeklyTrivia from './components/pages/Trivia/weeklyTrivia';
 import dashboard from './components/pages/Users/Profile/dashboard';
 import userReviews from './components/pages/Reviews/userReviews';
+import signIn from './components/pages/Users/signIn';
 
 
  class App extends Component {
@@ -25,6 +26,7 @@ import userReviews from './components/pages/Reviews/userReviews';
           <Route exact path='/weeklyTrivia' component={weeklyTrivia}></Route>
           <Route exact path='/dashboard' component={dashboard}></Route>
           <Route exact path='/userSignUp' component={userSignUp}></Route>
+          <Route exact path='/signIn' component={signIn}></Route>
           <Footer />
         </div>
       </Router>

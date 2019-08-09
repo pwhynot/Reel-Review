@@ -40,7 +40,7 @@ import { Link } from "react-router-dom";
                 <NavLink><Link  to="/review" style={{ textDecoration: 'none'}}>Submit a Review</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none'}}>View All Reivews</Link></NavLink>
+                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none'}}>View User Reivews</Link></NavLink>
               </NavItem>
               <NavItem>
                 <NavLink><Link  to="/weeklyTrivia" style={{ textDecoration: 'none'}}>Movie Trivia</Link></NavLink>
@@ -56,8 +56,7 @@ import { Link } from "react-router-dom";
                   <DropdownItem href="/dashboard"><Link  to="/dashboard" style={{ textDecoration: 'none'}}>My Account</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
-                    Login
+                  <DropdownItem href="/signIn"><Link  to="/signIn" style={{ textDecoration: 'none'}}>Login</Link>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>

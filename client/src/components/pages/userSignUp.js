@@ -16,7 +16,7 @@ import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
         <FormGroup row>
           <Label for="password" sm={2}>Create a password</Label>
           <Col sm={6}>
-            <Input type="text" name="password" id="password" placeholder="password placeholder" />
+            <Input type="password" name="password" id="password" placeholder="password placeholder" />
           </Col>
         </FormGroup>
         <FormGroup row>
