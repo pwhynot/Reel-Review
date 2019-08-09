@@ -90,8 +90,7 @@ class weeklyTrivia extends React.Component {
             <p
               key={option.id}
               className={`ui floating message options
-         ${myAnswer === option ? "selected" : null}
-         `}
+         ${myAnswer === option ? "selected" : null}`}
               onClick={() => this.checkAnswer(option)}
             >
               {option}

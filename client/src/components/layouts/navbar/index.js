@@ -31,7 +31,7 @@ import { Link } from "react-router-dom";
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar color="dark" dark expand="md">
           <NavbarBrand> <Link to="/" style={{ textDecoration: 'none' }}>REEL REVIEW</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
