@@ -17,18 +17,19 @@ Patrick Whynot: Full Stack developer
 
 # Techstack:
 MERN Stack
-Two new libraries: Material-UI, Reactstrap
+Two new libraries: Materialize, Reactstrap
 
 ## MVP:
 -Login Page
 -Unique dashboard page for each user
 -Review and Ratings submission page for users
 -Weekly trivia game and online polls
--Daily/Weekly posting of latest film/tv news and content
+
 
 ## Stretch Goals:
 -Add a function that will send users a weekly newsletter via email they signed up with
 -Give users the ability to customize their account/dashboard page, with picture and unique username
+-Daily/Weekly posting of latest film/tv news and content
  
 
 ## Future Development:

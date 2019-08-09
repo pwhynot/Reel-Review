@@ -10,19 +10,19 @@ import { Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
         <FormGroup row>
           <Label for="userName" sm={2}>Create a Username</Label>
           <Col sm={6}>
-            <Input type="name" name="userName" id="userName" placeholder="username placeholder" />
+            <Input type="text" name="userName" id="userName" placeholder="username placeholder" />
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label for="password" sm={2}>Create a password</Label>
           <Col sm={6}>
-            <Input type="passwrod" name="password" id="password" placeholder="password placeholder" />
+            <Input type="text" name="password" id="password" placeholder="password placeholder" />
           </Col>
         </FormGroup>
         <FormGroup row>
           <Label for="email" sm={2}>Email you wish to sign up with</Label>
           <Col sm={6}>
-            <Input type="email" name="email-name" id="email" placeholder="email placeholder" />
+            <Input type="text" name="email-name" id="email" placeholder="email placeholder" />
           </Col>
         </FormGroup>
           
