@@ -46,7 +46,7 @@ import { Link } from "react-router-dom";
                 <NavLink><Link  to="/weeklyTrivia" style={{ textDecoration: 'none'}}>Movie Trivia</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/userSignUp" style={{ textDecoration: 'none'}}>Create Account</Link></NavLink>
+                <NavLink><Link  to="/Register" style={{ textDecoration: 'none'}}>Create Account</Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
