@@ -22,7 +22,7 @@ mongoose.connect(
 
 app.use(passport.initialize());
 
-app.use('./config/passport')(passport);
+require('./config/passport')(passport);
 
 app.use('/api/userInfo', users);
 
