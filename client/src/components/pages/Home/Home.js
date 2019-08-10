@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import Polls from '../../onlinePoll/Polls';
+//import Polls from '../../onlinePoll/Polls';
+import Card from '../../layouts/card/index';
 
  class Home extends Component {
     render() {
@@ -7,7 +8,7 @@ import Polls from '../../onlinePoll/Polls';
             <div>
                <h2>Welcome to Reel Review!</h2> 
                <h4>Check out the latest film and televison news below and be sure take our online poll of the week!</h4>
-        
+        <Card />
 
             </div>
         )

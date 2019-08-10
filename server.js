@@ -8,11 +8,7 @@ const users = require('./routes/api/userInfo');
 
 const app = express();
 
-app.use(
-    bodyParser.urlencoded({
-      extended: false
-    })
-  );
+app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 const db = require('./config/keys').mongoURI;
