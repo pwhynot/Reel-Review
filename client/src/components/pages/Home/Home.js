@@ -1,18 +1,44 @@
-import React, { Component } from 'react'
-//import Polls from '../../onlinePoll/Polls';
+import React from 'react';
+import { Media } from 'reactstrap';
 
-
- class Home extends Component {
-    render() {
-        return (
-            <div>
-               <h2>Welcome to Reel Review!</h2> 
-               <h4>Check out the latest film and televison news below and be sure take our online poll of the week!</h4>
-      
-
-            </div>
-        )
-    }
-}
+const Home = () => {
+  return (
+    <div>
+      <Media>
+        <Media left top href="#">
+          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
+        </Media>
+        <Media body>
+          <Media heading>
+            Top aligned media
+          </Media>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </Media>
+      </Media>
+      <Media className="mt-1">
+        <Media left middle href="#">
+          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
+        </Media>
+        <Media body>
+          <Media heading>
+            Middle aligned media
+          </Media>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </Media>
+      </Media>
+      <Media className="mt-1">
+        <Media left bottom href="#">
+          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
+        </Media>
+        <Media body>
+          <Media heading>
+            Bottom aligned media
+          </Media>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+        </Media>
+      </Media>
+    </div>
+  );
+};
 
 export default Home;
