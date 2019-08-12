@@ -1,22 +1,39 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import jwt_decode from "jwt-decode";
+import setAuthToken from "./utils/setAuthToken";
+import { setCurrentUser, logoutUser } from "./actions/authActions";
+import { Provider } from "react-redux";
+import store from "./store";
 import Navbar from './components/layouts/navbar/index';
 import Jumbotron from './components/layouts/jumbotron/index';
 import Footer from './components/layouts/footer/index';
 import Home from './components/pages/Home/Home';
-import Register from './components/pages/Register';
-import './App.css';
+import Register from './components/auth/Register';
 import submitReiew from './components/pages/ReviewSubmit/submitReview';
 import weeklyTrivia from './components/pages/Trivia/weeklyTrivia';
-import dashboard from './components/pages/Users/Profile/dashboard';
+import dashboard from './components/dashboard/dashboard';
 import userReviews from './components/pages/Reviews/userReviews';
-import signIn from './components/pages/Users/signIn';
+import Login from './components/auth/Login';
+import PrivateRoute from "./components/privateRoute/privateRoute";
+import './App.css';
 
-
+if (localStorage.jwtToken) {
+  const token = localStorage.jwtToken;
+  setAuthToken(token);
+  const decoded = jwt_decode(token);
+  store.dispatch(setCurrentUser(decoded));
+  const currentTime = Date.now() / 1000;
+  if (decoded.exp < currentTime) {
+    store.dispatch(logoutUser());
+    window.location.href = "./login";
+  }
+}
  class App extends Component {
   render() {
     return (
-      <Router>
+      <Provider store={store}>
+        <Router>
         <div className='App'>
           <Navbar />
           <Jumbotron />
@@ -25,11 +42,17 @@ import signIn from './components/pages/Users/signIn';
           <Route exact path='/userReviews' component={userReviews}></Route>
           <Route exact path='/weeklyTrivia' component={weeklyTrivia}></Route>
           <Route exact path='/dashboard' component={dashboard}></Route>
-          <Route exact path='/Register' component={Register}></Route>
-          <Route exact path='/signIn' component={signIn}></Route>
+          <Route exact path='/register' component={Register}></Route>
+          <Route exact path='/login' component={Login}></Route>
+          <Switch>
+              <PrivateRoute exact path="/dashboard" component={dashboard} />
+              
+            </Switch>
           <Footer />
         </div>
       </Router>
+      </Provider>
+      
      
     )
   }

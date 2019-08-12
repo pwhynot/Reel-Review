@@ -32,34 +32,34 @@ import { Link } from "react-router-dom";
     return (
       <div>
         <Navbar color="dark" dark expand="md">
-          <NavbarBrand> <Link to="/" style={{ textDecoration: 'none' }}>REEL REVIEW</Link></NavbarBrand>
+          <NavbarBrand> <Link to="/">REEL REVIEW</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink><Link  to="/review" style={{ textDecoration: 'none'}}>Submit a Review</Link></NavLink>
+                <NavLink><Link  to="/review">Submit a Review</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none'}}>View User Reivews</Link></NavLink>
+                <NavLink><Link  to="/userReviews">View User Reivews</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/weeklyTrivia" style={{ textDecoration: 'none'}}>Movie Trivia</Link></NavLink>
+                <NavLink><Link  to="/weeklyTrivia">Movie Trivia</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/Register" style={{ textDecoration: 'none'}}>Create Account</Link></NavLink>
+                <NavLink><Link  to="/Register">Create Account</Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   User
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem href="/dashboard"><Link  to="/dashboard" style={{ textDecoration: 'none'}}>My Account</Link>
+                  <DropdownItem href="/dashboard"><Link  to="/dashboard">My Account</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="/signIn"><Link  to="/signIn" style={{ textDecoration: 'none'}}>Login</Link>
+                  <DropdownItem href="/Login"><Link  to="/Login">Login</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem>
+                  <DropdownItem href="/"><Link  to="/">Logout</Link>
                     Logout
                   </DropdownItem>
                 </DropdownMenu>
