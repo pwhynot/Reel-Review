@@ -38,8 +38,8 @@ import { Link } from "react-router-dom";
   };
   render() {
     return (
-      <div>
-        <Navbar color="light" dark expand="lg">
+      <div >
+        <Navbar id="nav" color="light" light expand="md">
           <NavbarBrand> <Link to="/" style={{ textDecoration: 'none', color: 'black'}}>REEL REVIEW</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

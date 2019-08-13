@@ -32,7 +32,6 @@ class userReviews extends Component {
                     Checkout reivews from other user's 
                 </p>
               </h4>
-
             </div>
           </div>
         </div>
