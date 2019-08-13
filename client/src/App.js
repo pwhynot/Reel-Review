@@ -41,7 +41,6 @@ if (localStorage.jwtToken) {
           <Route exact path='/review' component={submitReiew}></Route>
           <Route exact path='/userReviews' component={userReviews}></Route>
           <Route exact path='/weeklyTrivia' component={weeklyTrivia}></Route>
-          <Route exact path='/dashboard' component={dashboard}></Route>
           <Route exact path='/register' component={Register}></Route>
           <Route exact path='/login' component={Login}></Route>
           <Switch>
