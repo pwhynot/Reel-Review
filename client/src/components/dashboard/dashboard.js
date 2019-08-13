@@ -17,7 +17,7 @@ class Dashboard extends Component {
     return (
       <div>
 
-        <div style={{ height: "50vh" }} className="container valign-wrapper">
+        <div style={{ height: "25vh" }} className="container valign-wrapper">
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
@@ -37,7 +37,13 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-
+        <ul class="collection with-header">
+        <li class="collection-header"><h4>Your Reivews</h4></li>
+        <li class="collection-item">Review 1</li>
+        <li class="collection-item">Review 2</li>
+        <li class="collection-item">Review 3</li>
+        <li class="collection-item">Review 4</li>
+      </ul>
         
     </div>
     );

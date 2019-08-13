@@ -48,26 +48,26 @@ import { Link } from "react-router-dom";
                 <NavLink><Link  to="/review" style={{ textDecoration: 'none'}}>Submit a Review</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none'}}>View User Reivews</Link></NavLink>
+                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none'}}>Reivews</Link></NavLink>
               </NavItem>
               <NavItem>
                 <NavLink><Link  to="/weeklyTrivia"style={{ textDecoration: 'none'}} >Movie Trivia</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/Register" style={{ textDecoration: 'none'}}>Create Account</Link></NavLink>
+                <NavLink><Link  to="/Register">Create Account</Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   User
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem href="/dashboard"><Link  to="/dashboard" style={{ textDecoration: 'none'}}>My Account</Link>
+                  <DropdownItem href="/dashboard"><Link  to="/dashboard">My Account</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="/Login"><Link  to="/Login" style={{ textDecoration: 'none'}}>Login</Link>
+                  <DropdownItem href="/Login"><Link  to="/Login">Login</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="/"><Link  to="/" style={{ textDecoration: 'none'}} onClick={this.onLogoutClick} >Logout</Link>
+                  <DropdownItem href="/"><Link  to="/" onClick={this.onLogoutClick} >Logout</Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -81,7 +81,8 @@ import { Link } from "react-router-dom";
 
 navbar.propTypes = {
   logoutUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
+  auth: PropTypes.object.isRequired,
+  
 };
 
 const mapStateToProps = state => ({
