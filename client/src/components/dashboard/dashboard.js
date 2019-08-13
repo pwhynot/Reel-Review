@@ -10,6 +10,24 @@ class Dashboard extends Component {
     this.props.logoutUser();
   };
 
+  componentDidMount() {
+    if (this.props.auth.isAuthenticated) {
+      this.props.history.push("/");
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.auth.isAuthenticated) {
+      this.props.history.push("/");
+    }
+
+    if (nextProps.errors) {
+      this.setState({
+        errors: nextProps.errors
+      });
+    }
+  }
+
   render() {
     const { user } = this.props.auth;
 
@@ -20,11 +38,14 @@ class Dashboard extends Component {
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
-                <b>Hey there,</b> {user.name.split(" ")[0]}
-                <p className="flow-text grey-text text-darken-1">
-                  Welcome to your Account Profile
+                <b>Welcome,{user.name.split(" ")[0]} </b> 
+                <p className="flow-text black-text">
+                  This is your profile
                 </p>
               </h4>
+              <p>
+
+              </p>
               <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px"}} 
                 onClick={this.onLogoutClick}
                 className="btn btn-large btn-flat waves-effect white black-text">
