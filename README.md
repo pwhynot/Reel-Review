@@ -1,5 +1,5 @@
 # Reel-Review
-[Reel Review](https://github.com/pwhynot/Reel-Review)
+[Reel Review](https://reel-review.herokuapp.com/)
 
 # Project Summary
 Reel Review is a Film and TV review site that allows users to share their own reviews and ratings of their favorite films and television shows.
@@ -20,10 +20,11 @@ MERN Stack
 Two new libraries: Materialize, Reactstrap
 
 ## MVP:
+-Sign up page
 -Login Page
 -Unique dashboard page for each user
--Review and Ratings submission page for users
--Weekly trivia game and online polls
+-Users can submit their own reviews
+
 
 
 ## Stretch Goals:
