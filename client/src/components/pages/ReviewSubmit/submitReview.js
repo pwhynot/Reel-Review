@@ -24,7 +24,7 @@ class submitReview extends Component {
     const { id, title, description } = this.state;
     axios.post('/api/reviews', { id, title, description, })
       .then((result) => {
-        this.props.history.push("/")
+        this.props.history.push("/userReviews")
       });
   }
 

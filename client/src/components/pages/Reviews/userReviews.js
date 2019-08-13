@@ -7,15 +7,15 @@ class userReviews extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      record: {}
+      reviews: {}
     };
   }
 
   componentDidMount() {
     axios.get('/api/reviews/'+this.props.match.params.id)
       .then(res => {
-        this.setState({ record: res.data });
-        console.log(this.state.record);
+        this.setState({ reviews: res.data });
+        console.log(this.state.reviews);
       });
   }
 
@@ -25,15 +25,15 @@ class userReviews extends Component {
         <div className="panel panel-default">
           <div className="panel-heading">
             <h3 className="panel-title">
-              {this.state.record.title}
+              {this.state.reviews.title}
             </h3>
           </div>
           <div className="panel-body">
             <dl>
               <dt>Review Written by:</dt>
-              <dd>{this.state.record.id}</dd>
+              <dd>{this.state.reviews.id}</dd>
               <dt>Description:</dt>
-              <dd>{this.state.record.description}</dd>
+              <dd>{this.state.reviews.description}</dd>
             </dl>
           </div>
         </div>
