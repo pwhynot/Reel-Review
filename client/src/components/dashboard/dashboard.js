@@ -26,14 +26,6 @@ class Dashboard extends Component {
                   This is your profile, you can access all your reviews from here.
                 </p>
               </h4>
-              <p>
-
-              </p>
-              <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px"}} 
-                onClick={this.onLogoutClick}
-                className="btn btn-large btn-flat">
-                Logout
-              </button>
             </div>
           </div>
         </div>
