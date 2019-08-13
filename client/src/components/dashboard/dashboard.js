@@ -10,23 +10,6 @@ class Dashboard extends Component {
     this.props.logoutUser();
   };
 
-  componentDidMount() {
-    if (this.props.auth.isAuthenticated) {
-      this.props.history.push("/");
-    }
-  }
-
-  componentWillReceiveProps(nextProps) {
-    if (nextProps.auth.isAuthenticated) {
-      this.props.history.push("/");
-    }
-
-    if (nextProps.errors) {
-      this.setState({
-        errors: nextProps.errors
-      });
-    }
-  }
 
   render() {
     const { user } = this.props.auth;
