@@ -1,22 +1,9 @@
 import React, { Component } from "react";
-import axios from "axios";
+
 
 
 class Dashboard extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      reviews: []
-    };
-  }
-
-  componentDidMount() {
-    axios.get("/api/reviews")
-      .then(res => {
-        this.setState({ reviews: res.data });
-        console.log(this.state.reviews);
-      });
-  }
+  c
 
 
   render() {
@@ -38,18 +25,11 @@ class Dashboard extends Component {
           </div>
         </div>
         <ul class="collection with-header" style={{width: "500px", marginLeft: "30px"}}>
-        {this.state.reviews.map(reviews =>
-            <tbody>
-            {this.state.reviews.map(reviews =>
-             <tr>
-             <td>{reviews.id}</td>
-             <td>{reviews.title}</td>
-             <td>{reviews.description}</td>
-           </tr>
-            )}
-          </tbody>   
-                    )}
-        
+        <li class="collection-header"><h4>Your Reivews</h4></li>
+        <li class="collection-item">Review 1 </li>
+        <li class="collection-item">Review 2</li>
+        <li class="collection-item">Review 3</li>
+        <li class="collection-item">Review 4</li>
       </ul>
         
     </div>
