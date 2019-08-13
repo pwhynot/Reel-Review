@@ -10,7 +10,7 @@ import Footer from './components/layouts/footer/index';
 import Home from './components/pages/Home/Home';
 import Register from './components/auth/Register';
 import submitReiew from './components/pages/ReviewSubmit/submitReview';
-import weeklyTrivia from './components/pages/Trivia/weeklyTrivia';
+
 import dashboard from './components/dashboard/dashboard';
 import userReviews from './components/pages/Reviews/userReviews';
 import Login from './components/auth/Login';
@@ -40,7 +40,7 @@ if (localStorage.jwtToken) {
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/review' component={submitReiew}></Route>
           <Route exact path='/userReviews' component={userReviews}></Route>
-          <Route exact path='/weeklyTrivia' component={weeklyTrivia}></Route>
+
           <Route exact path='/register' component={Register}></Route>
           <Route exact path='/login' component={Login}></Route>
           <Switch>

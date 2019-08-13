@@ -51,9 +51,6 @@ import { Link } from "react-router-dom";
                 <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none', color: 'black'}}>Reivews</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/weeklyTrivia"style={{ textDecoration: 'none', color: 'black'}} >Movie Trivia</Link></NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink><Link  to="/Register" style={{ textDecoration: 'none', color: 'black'}}>Create Account </Link></NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar style={{ textDecoration: 'none', color: 'black'}}>
