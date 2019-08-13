@@ -1,14 +1,22 @@
 import React, { Component } from "react";
-//import { Link } from "react-router-dom";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { logoutUser } from "../../actions/authActions";
+import axios from "axios";
+
 
 class Dashboard extends Component {
-  onLogoutClick = e => {
-    e.preventDefault();
-    this.props.logoutUser();
-  };
+  constructor(props) {
+    super(props)
+    this.state = {
+      reviews: []
+    };
+  }
+
+  componentDidMount() {
+    axios.get("/api/reviews")
+      .then(res => {
+        this.setState({ reviews: res.data });
+        console.log(this.state.reviews);
+      });
+  }
 
 
   render() {
@@ -30,11 +38,20 @@ class Dashboard extends Component {
           </div>
         </div>
         <ul class="collection with-header" style={{width: "500px", marginLeft: "30px"}}>
-        <li class="collection-header"><h4>Your Reivews</h4></li>
-        <li class="collection-item">Review 1</li>
-        <li class="collection-item">Review 2</li>
-        <li class="collection-item">Review 3</li>
-        <li class="collection-item">Review 4</li>
+        {this.state.reviews.map(reviews =>
+            <tbody>
+            {this.state.reviews.map(reviews =>
+              <tr>
+                <li class="collection-header"><h4>Your Reivews</h4></li>
+                <li class="collection-item">Review 1{reviews.id}{reviews.title} </li>
+                <li class="collection-item">Review 2</li>
+                <li class="collection-item">Review 3</li>
+                <li class="collection-item">Review 4</li>
+              </tr>
+            )}
+          </tbody>   
+                    )}
+        
       </ul>
         
     </div>
@@ -42,16 +59,4 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.propTypes = {
-  logoutUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
-};
-
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Dashboard);
+export default Dashboard;
