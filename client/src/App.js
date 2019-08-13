@@ -16,7 +16,9 @@ import userReviews from './components/pages/Reviews/userReviews';
 import Login from './components/auth/Login';
 import PrivateRoute from "./components/privateRoute/privateRoute";
 import Header from "./components/layouts/Header/header";
+
 import './App.css';
+import itChapter2 from './components/pages/Articles/itChapter2';
 
 if (localStorage.jwtToken) {
   const token = localStorage.jwtToken;
@@ -43,6 +45,7 @@ if (localStorage.jwtToken) {
 
           <Route exact path='/register' component={Register}></Route>
           <Route exact path='/login' component={Login}></Route>
+          <Route exact path='/itChapter2' component={itChapter2}></Route>
           <Switch>
               <PrivateRoute exact path="/dashboard" component={dashboard} />
               
