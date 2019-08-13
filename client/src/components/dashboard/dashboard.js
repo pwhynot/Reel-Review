@@ -19,11 +19,11 @@ class Dashboard extends Component {
 
         <div style={{ height: "25vh" }} className="container valign-wrapper">
           <div className="row">
-            <div className="landing-copy col s12 center-align">
+            <div className="landing-copy col s12 left-align">
               <h4>
                 <b>Welcome,{user.name.split(" ")[0]} </b> 
                 <p className="flow-text black-text">
-                  This is your profile
+                  This is your profile, you can access all your reviews from here.
                 </p>
               </h4>
               <p>
@@ -37,7 +37,7 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-        <ul class="collection with-header">
+        <ul class="collection with-header" style={{width: "300px"}}>
         <li class="collection-header"><h4>Your Reivews</h4></li>
         <li class="collection-item">Review 1</li>
         <li class="collection-item">Review 2</li>
