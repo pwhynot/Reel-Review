@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Reviews = require("../../models/Reviews");
+const Review = require("../../models/Reviews");
 
 router.get("/", function(req, res, next) {
   Review.find(function (err, products) {

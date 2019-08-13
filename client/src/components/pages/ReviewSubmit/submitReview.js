@@ -22,7 +22,7 @@ class submitReview extends Component {
   onSubmit = (e) => {
     e.preventDefault();
     const { id, title, description } = this.state;
-    axios.post('/api/review', { id, title, description, })
+    axios.post('/api/reviews', { id, title, description, })
       .then((result) => {
         this.props.history.push("/")
       });
