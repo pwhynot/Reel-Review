@@ -6,8 +6,8 @@ import './style.css';
 const jumbotron = (props) => {
 
   return (
-    <div>
-      <Jumbotron>
+      <div>
+          <Jumbotron>
         <div className="jumbotron jumbotron-cover-image">
           <h1 className="display-2">Reel Review</h1>
           <p className="lead">Film and Television reviews from everyday people, not overpaid critics!</p>
@@ -15,7 +15,9 @@ const jumbotron = (props) => {
         </div>
     
       </Jumbotron>
-    </div>
+      </div>
+     
+   
   );
 };
 
