@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+
 
 class submitReview extends Component {
 
@@ -32,24 +32,19 @@ class submitReview extends Component {
     const { id, title, description, } = this.state;
     return (
       <div>
-        <div style={{ height: "25vh" }} className="container valign-wrapper">
+        <div style={{ height: "25vh", width: "75vh" }} className="container valign-wrapper">
           <div className="row">
-            <div className="landing-copy col s8 left-align">
-              <h4>
-               <b>Write your review below!</b>
-                <p className="flow-text black-text">
-                    Fill out the form below to submit your reivew of any film or television show.
+            <div className="landing-copy col s8">
+              <h2>
+                <p className="flow-text grey-text text-darken-4">
+                Fill out the form below and submit your reivew of any film or television show.
                 </p>
-              </h4>
-              <div className="row">
-                <Link to="/userReviews" className="btn-flat">
-                   Check out other user's reviews 
-                </Link>
-              </div>
+              </h2>
+              
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container black-text">
           <div className="row">
             <div className="col s12">
               <div className="panel-body">
@@ -60,7 +55,7 @@ class submitReview extends Component {
                   </div>
                   <div className="form-group">
                     <label for="title">Title of Film or TV Show</label>
-                    <input type="text" className="form-control" name="title" value={title} onChange={this.onChange}  />
+                    <input type="name" className="form-control" name="title" value={title} onChange={this.onChange}  />
                   </div>
                   <div className="input-field col s12">
                     <label for="textarea1">Type Review Here!</label>
