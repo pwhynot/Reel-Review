@@ -39,35 +39,35 @@ import { Link } from "react-router-dom";
   render() {
     return (
       <div>
-        <Navbar color="dark" light expand="md">
-          <NavbarBrand> <Link to="/" style={{ textDecoration: 'none'}}>REEL REVIEW</Link></NavbarBrand>
+        <Navbar color="light" dark expand="lg">
+          <NavbarBrand> <Link to="/" style={{ textDecoration: 'none', color: 'black'}}>REEL REVIEW</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink><Link  to="/review" style={{ textDecoration: 'none'}}>Submit a Review</Link></NavLink>
+                <NavLink><Link  to="/review" style={{ textDecoration: 'none', color: 'black'}}>Submit a Review</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none'}}>Reivews</Link></NavLink>
+                <NavLink><Link  to="/userReviews" style={{ textDecoration: 'none', color: 'black'}}>Reivews</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/weeklyTrivia"style={{ textDecoration: 'none'}} >Movie Trivia</Link></NavLink>
+                <NavLink><Link  to="/weeklyTrivia"style={{ textDecoration: 'none', color: 'black'}} >Movie Trivia</Link></NavLink>
               </NavItem>
               <NavItem>
-                <NavLink><Link  to="/Register">Create Account</Link></NavLink>
+                <NavLink><Link  to="/Register" style={{ textDecoration: 'none', color: 'black'}}>Create Account </Link></NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
+              <UncontrolledDropdown nav inNavbar style={{ textDecoration: 'none', color: 'black'}}>
+                <DropdownToggle nav caret style={{ textDecoration: 'none', color: 'black'}}>
                   User
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem href="/dashboard"><Link  to="/dashboard">My Account</Link>
+                  <DropdownItem href="/dashboard"><Link  to="/dashboard" style={{ textDecoration: 'none', color: 'black'}}>My Account</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="/Login"><Link  to="/Login">Login</Link>
+                  <DropdownItem href="/Login"><Link  to="/Login" style={{ textDecoration: 'none', color: 'black'}}>Login</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="/"><Link  to="/" onClick={this.onLogoutClick} >Logout</Link>
+                  <DropdownItem href="/"><Link  to="/" style={{ textDecoration: 'none', color: 'black'}} onClick={this.onLogoutClick} >Logout</Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
