@@ -31,7 +31,7 @@ class Dashboard extends Component {
               </p>
               <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px"}} 
                 onClick={this.onLogoutClick}
-                className="btn btn-large btn-flat waves-effect white black-text">
+                className="btn btn-large btn-flat">
                 Logout
               </button>
             </div>

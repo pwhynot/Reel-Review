@@ -11,6 +11,9 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+import PropTypes from "prop-types"; 
+import { connect } from "react-redux";
+import { logoutUser } from "../../../actions/authActions";
 import "./style.css";
 import { Link } from "react-router-dom";
 
@@ -28,10 +31,15 @@ import { Link } from "react-router-dom";
       isOpen: !this.state.isOpen
     });
   }
+
+  onLogoutClick = e => {
+    e.preventDefault();
+    this.props.logoutUser();
+  };
   render() {
     return (
       <div>
-        <Navbar color="dark" dark expand="md">
+        <Navbar color="dark" light expand="md">
           <NavbarBrand> <Link to="/" style={{ textDecoration: 'none'}}>REEL REVIEW</Link></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -59,7 +67,7 @@ import { Link } from "react-router-dom";
                   <DropdownItem href="/Login"><Link  to="/Login" style={{ textDecoration: 'none'}}>Login</Link>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="/"><Link  to="/" style={{ textDecoration: 'none'}}>Logout</Link>
+                  <DropdownItem href="/"><Link  to="/" style={{ textDecoration: 'none'}} onClick={this.onLogoutClick} >Logout</Link>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -71,5 +79,16 @@ import { Link } from "react-router-dom";
   }
 }
 
+navbar.propTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired
+};
 
-export default navbar;
+const mapStateToProps = state => ({
+  auth: state.auth
+});
+
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(navbar);
