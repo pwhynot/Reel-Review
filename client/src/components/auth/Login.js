@@ -59,7 +59,7 @@ class Login extends Component {
               <h4>
                 <b>Login below</b> 
               </h4>
-              <p className="grey-text text-darken-1">
+              <p className="grey-text text-darken-4">
                 Don't have an account? <Link to="/register">Sign Up Today!</Link>
               </p>
             </div>
@@ -102,10 +102,11 @@ class Login extends Component {
                     width: "150px",
                     borderRadius: "3px",
                     letterSpacing: "1.5px",
-                    marginTop: "1rem"
+                    marginTop: "1rem",
+                    marginBottom: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large" >
+                  className="btn btn-small" >
                   Login
                 </button>
               </div>

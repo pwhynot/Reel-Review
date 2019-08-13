@@ -59,7 +59,7 @@ class Register extends Component {
               <h4>
                 <b>Register below</b> 
               </h4>
-              <p className="grey-text text-darken-1">
+              <p className="grey-text text-darken-4">
                 Already have an account? <Link to="/login">Log in</Link>
               </p>
             </div>
@@ -122,10 +122,11 @@ class Register extends Component {
                     width: "150px",
                     borderRadius: "3px",
                     letterSpacing: "1.5px",
-                    marginTop: "1rem"
+                    marginTop: "1rem",
+                    marginBottom: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large" >
+                  className="btn btn-small" >
                   Sign up
                 </button>
               </div>
