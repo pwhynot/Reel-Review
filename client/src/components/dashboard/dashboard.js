@@ -3,15 +3,12 @@ import React, { Component } from "react";
 
 
 class Dashboard extends Component {
-  c
-
 
   render() {
     const { user } = this.props.auth;
 
     return (
       <div>
-
         <div style={{ height: "25vh" }} className="container valign-wrapper">
           <div className="row">
             <div className="landing-copy col s12 left-align">
@@ -31,7 +28,6 @@ class Dashboard extends Component {
         <li class="collection-item">Review 3</li>
         <li class="collection-item">Review 4</li>
       </ul>
-        
     </div>
     );
   }
