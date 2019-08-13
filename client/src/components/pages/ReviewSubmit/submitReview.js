@@ -64,8 +64,8 @@ class submitReview extends Component {
                   </div>
                   <div className="input-field col s12">
                     <label for="textarea1">Type Review Here!</label>
-                    <input type="text" className="input-field col s12" name="description" value={description} onChange={this.onChange}></input>
-                  </div>
+                    <textarea id="textarea1" class="materialize-textarea" name="description" value={description} onChange={this.onChange}></textarea>
+                      </div>
                   <button type="submit" className="btn btn-small" style={{margin: "1rem", width: "100px"}}>
                     Submit
                   </button>
