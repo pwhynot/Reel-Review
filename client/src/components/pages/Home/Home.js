@@ -1,40 +1,41 @@
 import React from 'react';
 import { Media } from 'reactstrap';
 
+
 const Home = () => {
   return (
     <div>
       <Media>
-        <Media left top href="#">
+        <Media left top href="/review">
           <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
         </Media>
         <Media body>
           <Media heading>
-            Top aligned media
+            Creator's Welcome note
           </Media>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          Welcome to Reel Review, the site dedicated to film and tv buffs looking for a place to share their opinions on their favorite films and television shows.
         </Media>
       </Media>
-        <Media className="mt-1">
+        <Media className="mt-5">
         <Media left middle href="#">
           <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
         </Media>
         <Media body>
           <Media heading>
-            Middle aligned media
+            Editor's Top summer picks!
           </Media>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          Checkout our in house editor's top picks for summer shows and movies, click this link to read the full article. Have you seen any of these films or shows, let us know down in the comments and tell us what your top summer picks are!
         </Media>
       </Media>
-      <Media className="mt-1">
+      <Media className="mt-5">
         <Media left bottom href="#">
           <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
         </Media>
         <Media body>
           <Media heading>
-            Bottom aligned media
+            IT Chapter 2 Trailer
           </Media>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+          Have you seen the newest trailer for IT Chapter 2? Read what our site creator has to say about it and find out why he's exictied for the premiere.
         </Media>
       </Media>
     </div>
