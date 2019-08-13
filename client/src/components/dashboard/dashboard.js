@@ -41,13 +41,11 @@ class Dashboard extends Component {
         {this.state.reviews.map(reviews =>
             <tbody>
             {this.state.reviews.map(reviews =>
-              <tr>
-                <li class="collection-header"><h4>Your Reivews</h4></li>
-                <li class="collection-item">Review 1{reviews.id}{reviews.title} </li>
-                <li class="collection-item">Review 2</li>
-                <li class="collection-item">Review 3</li>
-                <li class="collection-item">Review 4</li>
-              </tr>
+             <tr>
+             <td>{reviews.id}</td>
+             <td>{reviews.title}</td>
+             <td>{reviews.description}</td>
+           </tr>
             )}
           </tbody>   
                     )}
