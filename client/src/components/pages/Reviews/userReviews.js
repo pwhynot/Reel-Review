@@ -25,33 +25,26 @@ class userReviews extends Component {
       <div>
         <div style={{ height: "25vh" }} className="container valign-wrapper">
           <div className="row">
-            <div className="landing-copy col s8 center-align">
+            <div className="landing-copy col s8 left-align">
               <h4>
                <b>User's Reivews</b> 
                 <p className="flow-text black-text">
                     Checkout reivews from other user's 
                 </p>
               </h4>
-              <div className="row">
-               
-              </div>
+
             </div>
           </div>
         </div>
         <div className="container">
           <div className="row">
-            <div className="col s12">
-              <Link to="/submitReview" className="btn btn-small" style={{margin: "1rem", width: "180px"}}>
-                  Submit a Reivew 
-              </Link>
-            </div>
             <div class="cards white darken-1">
               <div class="card-content grey-text">
                 <table className="table table-stripe">
                   <tbody>
                     {this.state.reviews.map(reviews =>
                       <tr>
-                        <td><Link to={`/show/${reviews._id}`}>{reviews.id}</Link></td>
+                        <td>{reviews.id}</td>
                         <td>{reviews.title}</td>
                         <td>{reviews.description}</td>
                       </tr>

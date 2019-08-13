@@ -55,8 +55,8 @@ class submitReview extends Component {
               <div className="panel-body">
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
-                    <label for="id">Email</label>
-                    <input type="email" className="form-control" name="id" value={id} onChange={this.onChange} />
+                    <label for="id">Name</label>
+                    <input type="name" className="form-control" name="id" value={id} onChange={this.onChange} />
                   </div>
                   <div className="form-group">
                     <label for="title">Title of Film or TV Show</label>
