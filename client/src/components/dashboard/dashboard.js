@@ -29,7 +29,7 @@ class Dashboard extends Component {
             </div>
           </div>
         </div>
-        <ul class="collection with-header" style={{width: "300px"}}>
+        <ul class="collection with-header" style={{width: "500px", marginLeft: "10px"}}>
         <li class="collection-header"><h4>Your Reivews</h4></li>
         <li class="collection-item">Review 1</li>
         <li class="collection-item">Review 2</li>
