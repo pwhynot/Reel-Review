@@ -32,7 +32,7 @@ class submitReview extends Component {
     const { id, title, description, } = this.state;
     return (
       <div>
-        <div style={{ height: "25vh", width: "75vh" }} className="container valign-wrapper">
+        <div style={{ height: "8vh", width: "75vh" }} className="container valign-wrapper">
           <div className="row">
             <div className="landing-copy col s8">
               <h2>

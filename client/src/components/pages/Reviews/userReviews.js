@@ -23,7 +23,7 @@ class userReviews extends Component {
 
     return (
       <div>
-        <div style={{ height: "25vh" }} className="container valign-wrapper">
+        <div style={{ height: "8vh" }} className="container valign-wrapper">
           <div className="row">
             <div className="landing-copy col s8 left-align">
               <h4>

@@ -6,7 +6,6 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
 import Navbar from './components/layouts/navbar/index';
-import Jumbotron from './components/layouts/jumbotron/index';
 import Footer from './components/layouts/footer/index';
 import Home from './components/pages/Home/Home';
 import Register from './components/auth/Register';
@@ -16,6 +15,7 @@ import dashboard from './components/dashboard/dashboard';
 import userReviews from './components/pages/Reviews/userReviews';
 import Login from './components/auth/Login';
 import PrivateRoute from "./components/privateRoute/privateRoute";
+import Header from "./components/layouts/Header/header";
 import './App.css';
 
 if (localStorage.jwtToken) {
@@ -36,7 +36,7 @@ if (localStorage.jwtToken) {
         <Router>
         <div className='App'>
           <Navbar />
-          <Jumbotron />
+          <Header />
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/review' component={submitReiew}></Route>
           <Route exact path='/userReviews' component={userReviews}></Route>
