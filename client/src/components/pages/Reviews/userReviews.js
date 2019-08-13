@@ -1,18 +1,18 @@
-import React, { Component } from 'react';
-import axios from 'axios';
-
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 class userReviews extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
-      reviews: {}
+      reviews: []
     };
   }
 
   componentDidMount() {
-    axios.get('/api/reviews/'+this.props.match.params.id)
+    axios.get("/api/reviews")
       .then(res => {
         this.setState({ reviews: res.data });
         console.log(this.state.reviews);
@@ -20,21 +20,46 @@ class userReviews extends Component {
   }
 
   render() {
+
     return (
-      <div className="container">
-        <div className="panel panel-default">
-          <div className="panel-heading">
-            <h3 className="panel-title">
-              {this.state.reviews.title}
-            </h3>
+      <div>
+        <div style={{ height: "25vh" }} className="container valign-wrapper">
+          <div className="row">
+            <div className="landing-copy col s8 center-align">
+              <h4>
+               <b>User's Reivews</b> 
+                <p className="flow-text black-text">
+                    Checkout reivews from other user's 
+                </p>
+              </h4>
+              <div className="row">
+               
+              </div>
+            </div>
           </div>
-          <div className="panel-body">
-            <dl>
-              <dt>Review Written by:</dt>
-              <dd>{this.state.reviews.id}</dd>
-              <dt>Description:</dt>
-              <dd>{this.state.reviews.description}</dd>
-            </dl>
+        </div>
+        <div className="container">
+          <div className="row">
+            <div className="col s12">
+              <Link to="/submitReview" className="btn btn-small" style={{margin: "1rem", width: "180px"}}>
+                  Submit a Reivew 
+              </Link>
+            </div>
+            <div class="cards white darken-1">
+              <div class="card-content grey-text">
+                <table className="table table-stripe">
+                  <tbody>
+                    {this.state.reviews.map(reviews =>
+                      <tr>
+                        <td><Link to={`/show/${reviews._id}`}>{reviews.id}</Link></td>
+                        <td>{reviews.title}</td>
+                        <td>{reviews.description}</td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
