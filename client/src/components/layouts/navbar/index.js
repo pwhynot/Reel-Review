@@ -55,7 +55,7 @@ import { Link } from "react-router-dom";
               </NavItem>
               <UncontrolledDropdown nav inNavbar style={{ textDecoration: 'none', color: 'black'}}>
                 <DropdownToggle nav caret style={{ textDecoration: 'none', color: 'black'}}>
-                  Users 
+                  Members 
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem href="/dashboard"><Link  to="/dashboard" style={{ textDecoration: 'none', color: 'black'}}>My Account</Link>
