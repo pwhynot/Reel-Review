@@ -12,7 +12,7 @@ class userReviews extends Component {
   }
 
   componentDidMount() {
-    axios.get('/api/reviews/'+this.props.match.params.id)
+    axios.get('/api/review/'+this.props.match.params.id)
       .then(res => {
         this.setState({ record: res.data });
         console.log(this.state.record);
