@@ -1,43 +1,40 @@
 import React from 'react';
-import { Media } from 'reactstrap';
+
+import { Card, CardImg, CardText, CardBody,
+  CardTitle, CardSubtitle, CardLink } from 'reactstrap';
 
 
 const Home = () => {
   return (
     <div>
-      <Media>
-        <Media left top href="/review">
-          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
-        </Media>
-        <Media body>
-          <Media heading>
-            Creator's Welcome note
-          </Media>
-          Welcome to Reel Review, the site dedicated to film and tv buffs looking for a place to share their opinions on their favorite films and television shows.
-        </Media>
-      </Media>
-        <Media className="mt-5">
-        <Media left middle href="#">
-          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
-        </Media>
-        <Media body>
-          <Media heading>
-            Editor's Top summer picks!
-          </Media>
-          Checkout our in house editor's top picks for summer shows and movies, click this link to read the full article. Have you seen any of these films or shows, let us know down in the comments and tell us what your top summer picks are!
-        </Media>
-      </Media>
-      <Media className="mt-5">
-        <Media left bottom href="#">
-          <Media object data-src="holder.js/64x64" alt="Generic placeholder image" />
-        </Media>
-        <Media body>
-          <Media heading>
-            IT Chapter 2 Trailer
-          </Media>
-          Have you seen the newest trailer for IT Chapter 2? Read what our site creator has to say about it and find out why he's exictied for the premiere.
-        </Media>
-      </Media>
+      <Card>
+        <CardImg top width="10%" imgSize="50%" src="http://www.ashartex.com/wp-content/uploads/2016/12/welcome-images-25.png" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Creator's Welcome Note</CardTitle>
+          <CardLink href="/welcomeNote">Click here to read it</CardLink>
+          <CardSubtitle></CardSubtitle>
+          <CardText>Welcome to the brand new Film and Television review site Reel Review, where everyday people get the chance to have their opinions heard over the professional critics.</CardText>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" imageSize="10%" src="http://images.tritondigitalcms.com/6616/sites/68/2019/01/02060034/Top-5-.png" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>Editor's top summer picks</CardTitle>
+          <CardLink href="/editorSummerPicks">Click here to read it</CardLink>
+          <CardSubtitle></CardSubtitle>
+          <CardText>Checkout our in house editor's top picks for summer shows and movies, click this link to read the full article.</CardText>
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="100%" imageSize="10%" src="https://ewedit.files.wordpress.com/2019/05/it2-trlr-0002.jpg" alt="Card image cap" />
+        <CardBody>
+          <CardTitle>IT Chapter 2 Trailer</CardTitle>
+          <CardLink href="/itChapter2">Click here to watch it</CardLink>
+          <CardSubtitle></CardSubtitle>
+          <CardText>Have you seen the newest trailer for IT Chapter 2? If not it's definitley a must watch, don't worry it doesn't give away much more than we already know. Our staff is super pumped for this movie to premiere how about you?</CardText>
+        </CardBody>
+      </Card>
+       
     </div>
   );
 };
